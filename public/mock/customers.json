@@ -1,0 +1,55 @@
+{
+  "customerList": [
+    {
+      "id": 1,
+      "company": "suntory",
+      "companyLogo": "/icons/company/ic_suntory_black.svg"
+    },
+    {
+      "id": 2,
+      "company": "booking.com",
+      "companyLogo": "/icons/company/ic_booking_black.svg"
+    },
+    {
+      "id": 3,
+      "company": "websummit",
+      "companyLogo": "/icons/company/ic_web_summit_black.svg"
+    },
+    {
+      "id": 4,
+      "company": "swiss re",
+      "companyLogo": "/icons/company/ic_swiss_black.svg"
+    },
+    {
+      "id": 5,
+      "company": "oracle",
+      "companyLogo": "/icons/company/ic_oracle_black.svg"
+    }
+  ],
+  "reviewList": [
+    {
+      "id": 1,
+      "company": "zapier",
+      "companyLogo": "/icons/company/ic_zapier.svg",
+      "staff": "Wade Foster, Co-Founder & CEO",
+      "staffPhoto": "https://www.slido.com/static/wade.42fcba32.1109.png",
+      "comment": "We love Slido at Zapier. We’re a 100% remote company and we use Slido during our weekly all-hands meetings to make sure that every team member gets a voice."
+    },
+    {
+      "id": 2,
+      "company": "zendesk",
+      "companyLogo": "/icons/company/ic_zendesk.svg",
+      "staff": "Hannah Lawrence, Senior IC Managerin",
+      "staffPhoto": "https://www.slido.com/static/hannah.c2d2b995.1109.jpg",
+      "comment": "Slido is my secret weapon. It helps us keep the feeling of accessibility and transparency alive, even as we’ve grown to a global, 2800+ employee company."
+    },
+    {
+      "id": 3,
+      "company": "suntory",
+      "companyLogo": "/icons/company/ic_suntory.svg",
+      "staff": "Norito Yonezawa, Corporate Strategy Planner",
+      "staffPhoto": "https://www.slido.com/static/norito.50778125.1109.jpg",
+      "comment": "The biggest value of Slido for us is having more lively, interactive meetings. Without Slido, it would just be the executives talking one way."
+    }
+  ]
+}

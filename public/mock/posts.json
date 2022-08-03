@@ -1,0 +1,22 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "title": "How to Run a Successful Q&A Session With Your Remote Team",
+      "href": "https://blog.slido.com/fix-your-qa-session/",
+      "thumbnail": "https://blog.slido.com/wp-content/uploads/2020/04/blog-slido-QA-header-1200x800.jpg"
+    },
+    {
+      "id": 2,
+      "title": "How to Use Slido for Small Meetings: 10 Interaction Tips",
+      "href": "https://blog.slido.com/slido-for-small-meetings/",
+      "thumbnail": "https://blog.slido.com/wp-content/uploads/2021/01/blog-slido-small-meetings-header.jpg"
+    },
+    {
+      "id": 3,
+      "title": "7 Interactive Poll Ideas for Your Next PowerPoint Presentation",
+      "href": "https://blog.slido.com/interactive-presentation-ideas/",
+      "thumbnail": "https://blog.slido.com/wp-content/uploads/2020/11/slido-blog-tips-for-polls-powerpoint-header.jpg"
+    }
+  ]
+}

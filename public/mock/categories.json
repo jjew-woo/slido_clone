@@ -1,0 +1,240 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "name": "Product",
+      "subCategories": [
+        {
+          "id": 101,
+          "name": "Product Tour",
+          "description": "See how Slido can help you engage your audience, whether it’s your team or event attendees.",
+          "icon": "/icons/category/ic_product_tour.svg"
+        },
+        {
+          "id": 102,
+          "name": "Live Polls",
+          "description": "Make your meetings and events more interactive by polling your audience in real time.",
+          "icon": "/icons/category/ic_live_polls.svg"
+        },
+        {
+          "id": 103,
+          "name": "Live Q&A",
+          "description": "Let your participants ask questions from any device and vote for their favorite ones.",
+          "icon": "/icons/category/ic_live.svg"
+        },
+        {
+          "id": 104,
+          "name": "Word Cloud",
+          "description": "Capture people’s thoughts and ideas in a beautiful word cloud.",
+          "icon": "/icons/category/ic_word_cloud.svg"
+        },
+        {
+          "id": 105,
+          "name": "Quizzes",
+          "description": "Make learning more fun, dynamic and social with live quizzes.",
+          "icon": "/icons/category/ic_quizzes.svg"
+        },
+        {
+          "id": 106,
+          "name": "Analytics",
+          "description": "Discover the most popular questions, topics and insights about your audience.",
+          "icon": "/icons/category/ic_analytics.svg"
+        },
+        {
+          "id": 107,
+          "name": "Integrations",
+          "description": "Integrate Slido with your favorite tools such as PowerPoint, Microsoft Teams and others.",
+          "icon": "/icons/category/ic_integrations.svg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Solutions",
+      "subCategories": [
+        {
+          "id": 201,
+          "name": "Remote Meetings",
+          "description": "Give everyone on your remote team a chance to participate, no matter where they are.",
+          "icon": "/icons/category/ic_remote_meetings.svg"
+        },
+        {
+          "id": 202,
+          "name": "Hybrid Meetings",
+          "description": "Bridge the gap between your remote and onsite participants and make everyone feel heard.",
+          "icon": "/icons/category/ic_hybrid_meetings.svg"
+        },
+        {
+          "id": 203,
+          "name": "Virtual Events",
+          "description": "Make your online participants part of the event with interactive Q&A and live polls.",
+          "icon": "/icons/category/ic_virtual_events.svg"
+        },
+        {
+          "id": 204,
+          "name": "Business",
+          "description": "Start a two-way conversation with your employees and run more interactive meetings.",
+          "icon": "/icons/category/ic_business.svg"
+        },
+        {
+          "id": 205,
+          "name": "All-Hands Meetings",
+          "description": "Run effective Q&A sessions and engage your team during all-company meetings.",
+          "icon": "/icons/category/ic_all_hands_meetings.svg"
+        },
+        {
+          "id": 206,
+          "name": "Webinars",
+          "description": "Make your webinars feel more like a conversation and less like a monologue.",
+          "icon": "/icons/category/ic_webinars.svg"
+        },
+        {
+          "id": 207,
+          "name": "Conferences",
+          "description": "Make your events more interactive by including everyone in a live Q&A and real-time polling.",
+          "icon": "/icons/category/ic_conferences.svg"
+        },
+        {
+          "id": 208,
+          "name": "Education",
+          "description": "Keep your students engaged with live polls, quizzes and interactive Q&A.",
+          "icon": "/icons/category/ic_education.svg"
+        },
+        {
+          "id": 209,
+          "name": "Customer Stories",
+          "description": "Discover how our customers use Slido to give their audience a voice.",
+          "icon": "/icons/category/ic_customer_stories.svg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pricing",
+      "subCategories": []
+    },
+    {
+      "id": 4,
+      "name": "Resources",
+      "subCategories": [
+        {
+          "id": 401,
+          "name": "Blog",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 402,
+          "name": "Better Meetings Guide",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 403,
+          "name": "Use Cases",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 404,
+          "name": "Webinars",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 405,
+          "name": "Videos",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 406,
+          "name": "Help Center",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 407,
+          "name": "Documents",
+          "description": "",
+          "icon": ""
+        },
+        {
+          "id": 408,
+          "name": "Download Switcher",
+          "description": "",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Enterprise",
+      "subCategories": []
+    }
+  ],
+  "footer": [
+    {
+      "id": 1,
+      "name": "Product",
+      "subCategories": [
+        { "id": 101, "name": "Product Tour" },
+        { "id": 102, "name": "Q&A" },
+        { "id": 103, "name": "Polls" },
+        { "id": 104, "name": "Quizzes" },
+        { "id": 105, "name": "Analytics" },
+        { "id": 106, "name": "Integrations" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Integrations",
+      "subCategories": [
+        { "id": 201, "name": "Webex" },
+        { "id": 202, "name": "PowerPoint" },
+        { "id": 203, "name": "Microsoft Teams" },
+        { "id": 204, "name": "Google Slides" },
+        { "id": 205, "name": "Live Video" },
+        { "id": 206, "name": "Embed Slido" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pricing",
+      "subCategories": [
+        { "id": 301, "name": "One-time Plans" },
+        { "id": 302, "name": "Annual Plans" },
+        { "id": 303, "name": "Education Plans" },
+        { "id": 304, "name": "Enterprise" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Resources",
+      "subCategories": [
+        { "id": 401, "name": "Blog" },
+        { "id": 402, "name": "Use Cases" },
+        { "id": 403, "name": "Webinars" },
+        { "id": 404, "name": "Videos" },
+        { "id": 405, "name": "Help Center" },
+        { "id": 406, "name": "Documents" },
+        { "id": 407, "name": "Download Switcher" },
+        { "id": 408, "name": "Product News" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Company",
+      "subCategories": [
+        { "id": 501, "name": "Contact Us" },
+        { "id": 502, "name": "About Us" },
+        { "id": 503, "name": "Careers" },
+        { "id": 504, "name": "Customers" },
+        { "id": 505, "name": "Security" },
+        { "id": 506, "name": "ISO Certification" },
+        { "id": 507, "name": "Legal" },
+        { "id": 508, "name": "Accessibility" }
+      ]
+    }
+  ]
+}

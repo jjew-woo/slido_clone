@@ -1,0 +1,22 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "title": "Intuitive and easy",
+      "description": "The attendees can join without any logins or downloads, and the setup for hosts takes only minutes.",
+      "icon": "/icons/feature/ic_intuitive.svg"
+    },
+    {
+      "id": 2,
+      "title": "5+ polling options",
+      "description": "With Slido’s 5 types of polls, Q&A, quizzes and surveys, you can engage your participants in a variety of ways.",
+      "icon": "/icons/feature/ic_many_polls.svg"
+    },
+    {
+      "id": 3,
+      "title": "Get started for free",
+      "description": "Start with our forever-free Basic plan, or get more from Slido for only US$10 per month.",
+      "icon": "/icons/feature/ic_free.svg"
+    }
+  ]
+}

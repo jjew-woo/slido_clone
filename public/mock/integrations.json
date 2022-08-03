@@ -1,0 +1,29 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "name": "Webex",
+      "icon": "/icons/integration/ic_webex.svg"
+    },
+    {
+      "id": 2,
+      "name": "PowerPoint",
+      "icon": "/icons/integration/ic_powerpoint.svg"
+    },
+    {
+      "id": 3,
+      "name": "Teams",
+      "icon": "/icons/integration/ic_microsoft_teams.svg"
+    },
+    {
+      "id": 4,
+      "name": "Google Slides",
+      "icon": "/icons/integration/ic_google_slides.svg"
+    },
+    {
+      "id": 5,
+      "name": "Live Videos",
+      "icon": "/icons/integration/ic_youtube.svg"
+    }
+  ]
+}

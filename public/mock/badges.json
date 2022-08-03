@@ -1,0 +1,19 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "title": "capterra best ease of use 2021",
+      "badge": "/icons/badge/ic_badge1.svg"
+    },
+    {
+      "id": 2,
+      "title": "leader winter 2022",
+      "badge": "/icons/badge/ic_badge2.svg"
+    },
+    {
+      "id": 3,
+      "title": "software advice best customer support 2021",
+      "badge": "/icons/badge/ic_badge3.svg"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "title": "Live polls",
+      "description": "Turn your one-way presentations into engaging conversations with live polls, word clouds or surveys. Ask what people think or how they feel and get their feedback in real time.",
+      "icon": "/icons/feature/ic_polls.svg",
+      "video": "https://www.slido.com/_next/static/media/49bf0feb36187f42.mp4"
+    },
+    {
+      "id": 2,
+      "title": "Audience Q&A",
+      "description": "Give everyone a chance to ask their questions, whether they’re on mute or too shy to speak up. People can ask anonymously and vote for the questions they like, bringing the most important topics to light.",
+      "icon": "/icons/feature/ic_questions.svg",
+      "video": "https://www.slido.com/_next/static/media/9b08dd915673c61d.mp4"
+    },
+    {
+      "id": 3,
+      "title": "Quizzes",
+      "description": "Bring a bit of fun to your meetings or training sessions. Create a live quiz or trivia game and test people’s knowledge in an interactive way.",
+      "icon": "/icons/feature/ic_quizzes.svg",
+      "video": "https://www.slido.com/_next/static/media/aedeb61313e69817.mp4"
+    },
+    {
+      "id": 4,
+      "title": "Analytics",
+      "description": "Get valuable insights from your meetings with Slido Analytics. Find out how many people were engaged and export your questions or voting results for further analysis.",
+      "icon": "/icons/feature/ic_analytics.svg",
+      "video": "https://www.slido.com/_next/static/media/ffcd5c7cb8594c19.mp4"
+    }
+  ]
+}
