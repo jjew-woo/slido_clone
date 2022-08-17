@@ -2,22 +2,53 @@ import styled from "styled-components"
 
 export default function Header() {
     return (
-        <Wrapper>
-            <Title>The largest, most successful companies boost audience participation with Slido</Title>
-            <Content>71% of the Fortune 500 and thousands of smaller companies have transformed their meetings with Slido’s polls, Q&amp;A, quizzes and word clouds.</Content>
-            <ButtonWrapper>
-                <Button className="colorBtn">Get start for free</Button>
-                <Button>Schedule a demo</Button>
-            </ButtonWrapper>
-            <video loop muted src="https://www.slido.com/_next/static/media/651ee4a2e705f5ae.mp4">
-            </video>
-        </Wrapper>
-        
+        <div>
+            <TitleWrapper>
+                <Title>The largest, most successful companies boost audience participation with Slido</Title>
+                <Content>71% of the Fortune 500 and thousands of smaller companies have transformed their meetings with Slido’s polls, Q&amp;A, quizzes and word clouds.</Content>
+                <ButtonWrapper>
+                    <Button className="colorBtn">Get start for free</Button>
+                    <Button>Schedule a demo</Button>
+                </ButtonWrapper>
+                <Video autoPlay muted loop>
+                    <source src="/videos/videos_welcome.mp4" type="video/mp4" />
+                </Video>
+            </TitleWrapper>
+            <Wrapper>
+                <h2>You can use Slido with</h2>
+                <ul>
+                    <li>
+                        <img src="/icons/integration/ic_webex.svg" alt=""></img>
+                        <div>webex</div>
+                    </li>
+                    <li>
+                        <img src="/icons/integration/ic_powerpoint.svg" alt=""></img>
+                        <div>powerpoint</div>
+                    </li>
+                    <li>
+                        <img src="/icons/integration/ic_microsoft_teams.svg" alt=""></img>
+                        <div>teams</div>
+                    </li>
+                    <li>
+                        <img src="/icons/integration/ic_google_slides.svg" alt=""></img>
+                        <div>Google Slides</div>
+                    </li>
+                    <li>
+                        <img src="/icons/integration/ic_youtube.svg" alt=""></img>
+                        <div>Live videos</div>
+                    </li>
+                </ul>
+            </Wrapper>
+        </div>
     )
 }
 
+const TitleWrapper = styled.div`
+    padding: 0px 32px;
+`
+
 const Wrapper = styled.div`
-    
+    padding: 56px 32px;
 `
 
 const Title = styled.h1`
@@ -61,4 +92,9 @@ const Button = styled.button`
             background-color: black;
         }
     }
+`
+
+const Video = styled.video`
+    width: 800px;
+    height: 450px;
 `
