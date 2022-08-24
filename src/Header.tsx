@@ -17,6 +17,10 @@ export default function Header() {
                     <Btn className="colorBtn">sign Up</Btn>
                 </MenuWrapper>
             </Nav>
+            <EventBox>
+                <EventLabel>Joining as a participant?</EventLabel>
+                <EventWrapper><EventInput type="text" value="Enter code here"></EventInput></EventWrapper>
+            </EventBox>
         </Wrapper>
     )
 }
@@ -34,13 +38,13 @@ const Nav = styled.nav`
 `
 
 const Wrapper = styled.div`
-    display: block;
+    /* display: block; */
     width: 100vw;
     height: 80px;
-    position: relative;
+    /* position: relative; */
     padding: 16px 0;
     align-items: center;
-    //flex-direction: row;
+    /* flex-direction: row; */
     
 `
 const Logo = styled.img`
@@ -93,4 +97,43 @@ const Linkedbtn = styled.a`
         color: rgb(57, 172, 55);
         text-decoration: underline solid rgb(57, 172, 55);
     }
+`
+
+const EventBox = styled.div`
+    //position: relative;
+    display: flex;
+    height: 58px;
+    width: 580px;
+    background-color: #1A73E8;
+    border-radius: 32px;
+    margin: 24px auto;
+    //text-align: center;
+    justify-content: center;
+    align-items: center;
+`
+const EventWrapper = styled.div`
+    position: relative;
+    display: flex;
+    height: 42px;
+    box-sizing: border-box;
+    
+`
+
+const EventInput = styled.input`
+    display: block;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid #999999;
+    text-overflow: ellipsis;
+    cursor: text;
+`
+
+const EventLabel = styled.span`
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    display: block;
+    padding-right: 32px;
 `

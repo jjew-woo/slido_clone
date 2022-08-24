@@ -4,8 +4,8 @@ export default function Header() {
     return (
         <div>
             <TitleWrapper>
-                <Title>The largest, most successful companies boost audience participation with Slido</Title>
-                <Content>71% of the Fortune 500 and thousands of smaller companies have transformed their meetings with Slido’s polls, Q&amp;A, quizzes and word clouds.</Content>
+                <Title>Your go-to interaction app for hybrid meetings</Title>
+                <Content>Engage your participants with live polls, Q&nbsp;A, quizzes and word clouds — whether you meet in the office, online or in-between.</Content>
                 <ButtonWrapper>
                     <Button className="colorBtn">Get start for free</Button>
                     <Button>Schedule a demo</Button>
@@ -16,29 +16,34 @@ export default function Header() {
             </TitleWrapper>
             <Wrapper>
                 <h2>You can use Slido with</h2>
-                <ul>
-                    <li>
+                <ItemList>
+                    <Item>
                         <img src="/icons/integration/ic_webex.svg" alt=""></img>
                         <div>webex</div>
-                    </li>
-                    <li>
+                    </Item>
+                    <Item>
                         <img src="/icons/integration/ic_powerpoint.svg" alt=""></img>
                         <div>powerpoint</div>
-                    </li>
-                    <li>
+                    </Item>
+                    <Item>
                         <img src="/icons/integration/ic_microsoft_teams.svg" alt=""></img>
                         <div>teams</div>
-                    </li>
-                    <li>
+                    </Item>
+                    <Item>
                         <img src="/icons/integration/ic_google_slides.svg" alt=""></img>
                         <div>Google Slides</div>
-                    </li>
-                    <li>
+                    </Item>
+                    <Item>
                         <img src="/icons/integration/ic_youtube.svg" alt=""></img>
                         <div>Live videos</div>
-                    </li>
-                </ul>
+                    </Item>
+                </ItemList>
             </Wrapper>
+            <Thumb src="/icons/what-is-slido.png" alt="" />
+            <MiddleBox>
+                <MiddleTitle>It’s how you include everyone in your meetings</MiddleTitle>
+                <Content>Slido gives you everything you need to engage your participants, capture their views and make everyone feel connected – whether you’re running a team call, training or an all-company meeting.</Content>
+            </MiddleBox>
         </div>
     )
 }
@@ -48,7 +53,22 @@ const TitleWrapper = styled.div`
 `
 
 const Wrapper = styled.div`
+    width: 1280px;
     padding: 56px 32px;
+    margin: 0 auto;
+`
+
+const ItemList = styled.ul`
+    width: 1184px;
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 16px;
+`
+
+const Item = styled.li`
+    float: left;
+    display: blocks;
 `
 
 const Title = styled.h1`
@@ -97,4 +117,19 @@ const Button = styled.button`
 const Video = styled.video`
     width: 800px;
     height: 450px;
+`
+
+const Thumb = styled.img`
+    width: 1216px;
+`
+
+const MiddleBox = styled.article`
+    display: block;
+    padding: 80px 16px;
+    margin: 0 270px;
+`
+
+const MiddleTitle = styled.h2`
+    display: block;
+    font-size: 48px;
 `
