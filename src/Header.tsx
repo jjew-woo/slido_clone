@@ -1,4 +1,7 @@
 import styled from "styled-components"
+import LinkedButton from "./LinkedButton"
+import MenuButton from "./MenuButton"
+import ColorButton from "./ColorButton"
 
 export default function Header() {
     return (
@@ -6,15 +9,15 @@ export default function Header() {
             <Nav>
                 <LogoWrapper><Logo src="/icons/ic_logo.svg" alt="logo"/></LogoWrapper>
                 <MenuWrapper>
-                    <Btn>Product</Btn>
-                    <Btn>Solution</Btn>
-                    <Linkedbtn>Pricing</Linkedbtn>
-                    <Btn>Resources</Btn>
-                    <Linkedbtn>Enterprise</Linkedbtn>
+                    <MenuButton text="Product"/>
+                    <MenuButton text="Solution"/>
+                    <LinkedButton text="Pricing"/>
+                    <MenuButton text="Resources"/>
+                    <LinkedButton text="Enterprise"/>
                 </MenuWrapper>
                 <MenuWrapper>
-                <Linkedbtn>Log In</Linkedbtn>
-                    <Btn className="colorBtn">sign Up</Btn>
+                    <LinkedButton text="Log In"/>
+                    <ColorButton height="48px" text="sign Up" />
                 </MenuWrapper>
             </Nav>
             <EventBox>
@@ -24,6 +27,7 @@ export default function Header() {
         </Wrapper>
     )
 }
+
 
 const Nav = styled.nav`
     top:0;
@@ -61,42 +65,7 @@ const MenuWrapper = styled.div`
     height: 48px;
     display: flex;
     align-items: center;
-`
-
-const Btn = styled.button`
-    height: 24px;
-    font-size: 16px;
-	display: inline-block;
-    position: relative;
-    border:none;
-	border-radius: 4px;
-    box-shadow: none;
-    background-color: white;
-    margin-left: 32px;
-    &.colorBtn {
-        font-weight: 700;
-        //width: 126px;
-        height: 48px;
-        padding: 11px 32px;
-        color: white;
-        background-color: #39AC37;
-        &:hover {
-            cursor: pointer;
-            background-color: black;
-        }
-    }
-`
-
-const Linkedbtn = styled.a`
-    font-size: 16px;
-	display: inline-block;
-    margin-left: 32px;
-    height: 24px;
-    :hover{
-        cursor: pointer;
-        color: rgb(57, 172, 55);
-        text-decoration: underline solid rgb(57, 172, 55);
-    }
+    justify-content: space-between;
 `
 
 const EventBox = styled.div`

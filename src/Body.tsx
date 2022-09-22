@@ -1,20 +1,21 @@
 import styled from "styled-components"
+import ColorButton from "./ColorButton"
 
 export default function Header() {
     return (
-        <div>
+        <Wrapper>
             <TitleWrapper>
                 <Title>Your go-to interaction app for hybrid meetings</Title>
                 <Content>Engage your participants with live polls, Q&nbsp;A, quizzes and word clouds — whether you meet in the office, online or in-between.</Content>
                 <ButtonWrapper>
-                    <Button className="colorBtn">Get start for free</Button>
+                    <ColorButton height="56px" text="Get start for free"/>
                     <Button>Schedule a demo</Button>
                 </ButtonWrapper>
                 <Video autoPlay muted loop>
                     <source src="/videos/videos_welcome.mp4" type="video/mp4" />
                 </Video>
             </TitleWrapper>
-            <Wrapper>
+            <ListWrapper>
                 <h2>You can use Slido with</h2>
                 <ItemList>
                     <Item>
@@ -38,21 +39,26 @@ export default function Header() {
                         <div>Live videos</div>
                     </Item>
                 </ItemList>
-            </Wrapper>
+            </ListWrapper>
             <Thumb src="/icons/what-is-slido.png" alt="" />
             <MiddleBox>
                 <MiddleTitle>It’s how you include everyone in your meetings</MiddleTitle>
                 <Content>Slido gives you everything you need to engage your participants, capture their views and make everyone feel connected – whether you’re running a team call, training or an all-company meeting.</Content>
             </MiddleBox>
-        </div>
+        </Wrapper>
     )
 }
+
+const Wrapper = styled.div`
+    padding-top: 20px;
+`
+
 
 const TitleWrapper = styled.div`
     padding: 0px 32px;
 `
 
-const Wrapper = styled.div`
+const ListWrapper = styled.div`
     width: 1280px;
     padding: 56px 32px;
     margin: 0 auto;
@@ -78,11 +84,15 @@ const Title = styled.h1`
 
 const Content = styled.p`
     font-size: 20px;
+    margin: 20px 0;
 `
 
 const ButtonWrapper = styled.div`
+    display: flex;
     height: 80px;
-    
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 `
 
 const Button = styled.button`
@@ -101,16 +111,6 @@ const Button = styled.button`
     &:hover {
         cursor: pointer;
         text-decoration: none solid rgb(57, 172, 55);
-    }
-    &.colorBtn {
-        font-weight: 700;
-        height: 56px;
-        padding: 15px 32px;
-        color: white;
-        background-color: #39AC37;
-        &:hover {
-            background-color: black;
-        }
     }
 `
 
