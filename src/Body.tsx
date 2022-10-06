@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Cards from "./Cards"
 import ColorButton from "./ColorButton"
 
 export default function Header() {
@@ -6,7 +7,7 @@ export default function Header() {
         <Wrapper>
             <TitleWrapper>
                 <Title>Your go-to interaction app for hybrid meetings</Title>
-                <Content>Engage your participants with live polls, Q&nbsp;A, quizzes and word clouds — whether you meet in the office, online or in-between.</Content>
+                <Content>Engage your participants with live polls, Q&amp;A, quizzes and word clouds — whether you meet in the office, online or in-between.</Content>
                 <ButtonWrapper>
                     <ColorButton height="56px" text="Get start for free"/>
                     <Button>Schedule a demo</Button>
@@ -45,14 +46,17 @@ export default function Header() {
                 <MiddleTitle>It’s how you include everyone in your meetings</MiddleTitle>
                 <Content>Slido gives you everything you need to engage your participants, capture their views and make everyone feel connected – whether you’re running a team call, training or an all-company meeting.</Content>
             </MiddleBox>
+            <Cards />
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction : column;
     padding-top: 20px;
 `
-
 
 const TitleWrapper = styled.div`
     padding: 0px 32px;
