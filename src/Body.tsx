@@ -44,11 +44,12 @@ export default function Header() {
             </ListWrapper>
             <Thumb src="/icons/what-is-slido.png" alt="" />
             <MiddleBox>
-                <MiddleTitle>It’s how you include everyone in your meetings</MiddleTitle>
+                <MiddleTitle>It’s how you <ColorText>include everyone</ColorText> in your meetings</MiddleTitle>
                 <Content>Slido gives you everything you need to engage your participants, capture their views and make everyone feel connected – whether you’re running a team call, training or an all-company meeting.</Content>
             </MiddleBox>
             <Cards />
             <Recognitions />
+            <MiddleTitle>Trusted by 860K customers worldwide</MiddleTitle>
         </Wrapper>
     )
 }
@@ -138,4 +139,8 @@ const MiddleBox = styled.article`
 const MiddleTitle = styled.h2`
     display: block;
     font-size: 48px;
+`
+
+const ColorText = styled.span`
+    color: #39AC37;
 `
