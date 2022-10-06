@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Cards from "./Cards"
 import ColorButton from "./ColorButton"
+import Recognitions from "./Recognitions"
 
 export default function Header() {
     return (
@@ -47,6 +48,7 @@ export default function Header() {
                 <Content>Slido gives you everything you need to engage your participants, capture their views and make everyone feel connected – whether you’re running a team call, training or an all-company meeting.</Content>
             </MiddleBox>
             <Cards />
+            <Recognitions />
         </Wrapper>
     )
 }

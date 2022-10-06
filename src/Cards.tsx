@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Card from "./card"
+import Card from "./Card"
 
 export default function Cards() {
     return (
@@ -16,4 +16,5 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 1216px;
+    padding: 80px 32px 48px 32px;
 `
