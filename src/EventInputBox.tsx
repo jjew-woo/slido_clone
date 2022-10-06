@@ -20,13 +20,12 @@ export default function EventInputBox() {
 }
 
 const EventBox = styled.div`
-    //position: relative;
+    position: relative;
     display: flex;
     height: 58px;
     width: 580px;
     background-color: #1A73E8;
     border-radius: 32px;
-    margin: 24px auto;
     padding: 0 8px 0 24px;
     //text-align: center;
     justify-content: space-between;

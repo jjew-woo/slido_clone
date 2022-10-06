@@ -2,10 +2,12 @@ import styled from "styled-components"
 import Cards from "./Cards"
 import ColorButton from "./ColorButton"
 import Recognitions from "./Recognitions"
+import EventInputBox from "./EventInputBox"
 
-export default function Header() {
+export default function Body() {
     return (
         <Wrapper>
+            <EventInputBox />
             <TitleWrapper>
                 <Title>Your go-to interaction app for hybrid meetings</Title>
                 <Content>Engage your participants with live polls, Q&amp;A, quizzes and word clouds — whether you meet in the office, online or in-between.</Content>
@@ -58,7 +60,6 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     flex-direction : column;
-    padding-top: 20px;
 `
 
 const TitleWrapper = styled.div`
