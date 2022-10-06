@@ -2,6 +2,7 @@ import styled from "styled-components"
 import LinkedButton from "./LinkedButton"
 import MenuButton from "./MenuButton"
 import ColorButton from "./ColorButton"
+import EventInputBox from "./EventInputBox"
 
 export default function Header() {
     return (
@@ -20,14 +21,10 @@ export default function Header() {
                     <ColorButton height="48px" text="sign Up" />
                 </MenuWrapper>
             </Nav>
-            <EventBox>
-                <EventLabel>Joining as a participant?</EventLabel>
-                <EventWrapper><EventInput type="text" value="Enter code here"></EventInput></EventWrapper>
-            </EventBox>
+            <EventInputBox />
         </Wrapper>
     )
 }
-
 
 const Nav = styled.nav`
     top:0;
@@ -66,43 +63,4 @@ const MenuWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-`
-
-const EventBox = styled.div`
-    //position: relative;
-    display: flex;
-    height: 58px;
-    width: 580px;
-    background-color: #1A73E8;
-    border-radius: 32px;
-    margin: 24px auto;
-    //text-align: center;
-    justify-content: center;
-    align-items: center;
-`
-const EventWrapper = styled.div`
-    position: relative;
-    display: flex;
-    height: 42px;
-    box-sizing: border-box;
-    
-`
-
-const EventInput = styled.input`
-    display: block;
-    font-size: 18px;
-    background-color: white;
-    border-radius: 24px;
-    border: 1px solid #999999;
-    text-overflow: ellipsis;
-    cursor: text;
-`
-
-const EventLabel = styled.span`
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    display: block;
-    padding-right: 32px;
 `
