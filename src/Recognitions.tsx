@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Recognition from "./Recognition"
+import Recognition from "./Image"
 
 export default function Recognitions() {
     return (

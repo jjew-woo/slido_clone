@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
-interface RecognitionProps {
+interface ImageProps {
     url: string;
 }
-export default function Recognition({url} : RecognitionProps) {
+export default function Image({url} : ImageProps) {
     return (
         <div>
             <img src={url}/>

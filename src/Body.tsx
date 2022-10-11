@@ -3,6 +3,7 @@ import Cards from "./Cards"
 import ColorButton from "./ColorButton"
 import Recognitions from "./Recognitions"
 import EventInputBox from "./EventInputBox"
+import Logos from "./Logos"
 
 export default function Body() {
     return (
@@ -52,6 +53,7 @@ export default function Body() {
             <Cards />
             <Recognitions />
             <MiddleTitle>Trusted by 860K customers worldwide</MiddleTitle>
+            <Logos />
         </Wrapper>
     )
 }
