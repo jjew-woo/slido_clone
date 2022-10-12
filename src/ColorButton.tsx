@@ -3,10 +3,12 @@ import styled from "styled-components"
 interface ColorButtonProps {
     height: string;
     text: string;
+    color: string;
+    background: string
 }
-export default function ColorButton( {text, height} : ColorButtonProps) {
+export default function ColorButton( {text, height, color, background} : ColorButtonProps) {
     return (
-        <Button height={height}>{text}</Button>
+        <Button height={height} color={color} background={background}>{text}</Button>
     )
     
 }
@@ -20,11 +22,12 @@ const Button = styled.button<ColorButtonProps>`
     border:none;
 	border-radius: 4px;
     box-shadow: none;
-    color: white;
+    color: ${(props) => props.color};
     font-weight: 700;
-    background-color: #39AC37;
+    background-color: ${(props) => props.background};
     &:hover {
         cursor: pointer;
         background-color: black;
+        color: white;
     }
 `

@@ -4,6 +4,7 @@ import ColorButton from "./ColorButton"
 import Recognitions from "./Recognitions"
 import EventInputBox from "./EventInputBox"
 import Logos from "./Logos"
+import MoreSlido from "./MoreSlido"
 
 export default function Body() {
     return (
@@ -13,7 +14,7 @@ export default function Body() {
                 <Title>Your go-to interaction app for hybrid meetings</Title>
                 <Content>Engage your participants with live polls, Q&amp;A, quizzes and word clouds — whether you meet in the office, online or in-between.</Content>
                 <ButtonWrapper>
-                    <ColorButton height="56px" text="Get start for free"/>
+                    <ColorButton height="56px" text="Get start for free" color="white" background="#39AC37"/>
                     <Button>Schedule a demo</Button>
                 </ButtonWrapper>
                 <Video autoPlay muted loop>
@@ -54,6 +55,7 @@ export default function Body() {
             <Recognitions />
             <MiddleTitle>Trusted by 860K customers worldwide</MiddleTitle>
             <Logos />
+            <MoreSlido />
         </Wrapper>
     )
 }

@@ -37,7 +37,7 @@ export default function Header() {
                     </MenuWrapper>
                     <MenuWrapper>
                         <LinkedButton text="Log In"/>
-                        <ColorButton height="48px" text="sign Up" />
+                        <ColorButton height="48px" text="sign Up" color="white" background="#39AC37"/>
                     </MenuWrapper>
                 </NavWrapper>
             </Nav>
