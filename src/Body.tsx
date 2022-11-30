@@ -5,6 +5,7 @@ import Recognitions from "./Recognitions"
 import EventInputBox from "./EventInputBox"
 import Logos from "./Logos"
 import MoreSlido from "./MoreSlido"
+import HowToUse from "./HowToUse"
 
 export default function Body() {
     return (
@@ -56,6 +57,7 @@ export default function Body() {
             <MiddleTitle>Trusted by 860K customers worldwide</MiddleTitle>
             <Logos />
             <MoreSlido />
+            <HowToUse />
         </Wrapper>
     )
 }
