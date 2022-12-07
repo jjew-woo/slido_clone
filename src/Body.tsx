@@ -3,6 +3,7 @@ import Cards from "./Cards"
 import ColorButton from "./ColorButton"
 import Recognitions from "./Recognitions"
 import EventInputBox from "./EventInputBox"
+import WhatIsSlido from "./WhatIsSlido"
 import Logos from "./Logos"
 import MoreSlido from "./MoreSlido"
 import HowToUse from "./HowToUse"
@@ -47,7 +48,7 @@ export default function Body() {
                     </Item>
                 </ItemList>
             </ListWrapper>
-            <Thumb src="/icons/what-is-slido.png" alt="" />
+            <WhatIsSlido />
             <MiddleBox>
                 <MiddleTitle>It’s how you <ColorText>include everyone</ColorText> in your meetings</MiddleTitle>
                 <Content>Slido gives you everything you need to engage your participants, capture their views and make everyone feel connected – whether you’re running a team call, training or an all-company meeting.</Content>
@@ -131,10 +132,6 @@ const Button = styled.button`
 const Video = styled.video`
     width: 800px;
     height: 450px;
-`
-
-const Thumb = styled.img`
-    width: 1216px;
 `
 
 const MiddleBox = styled.article`

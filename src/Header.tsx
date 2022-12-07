@@ -53,7 +53,7 @@ const Nav = styled.nav`
     display: flex;
     justify-content: center;
     padding: 16px 0;
-    z-index: 93;
+    z-index: 8;
     background-color: white;
     box-shadow:${props=>(props.underline ? '0 0.125rem 0.125rem rgb(0 0 0 / 10%)' : 'none')};
 `
