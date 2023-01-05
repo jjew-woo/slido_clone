@@ -7,6 +7,7 @@ import WhatIsSlido from "./WhatIsSlido"
 import Logos from "./Logos"
 import MoreSlido from "./MoreSlido"
 import HowToUse from "./HowToUse"
+import Carousel from "./Carousel"
 
 export default function Body() {
     return (
@@ -55,7 +56,7 @@ export default function Body() {
             </MiddleBox>
             <Cards />
             <Recognitions />
-            <MiddleTitle>Trusted by 860K customers worldwide</MiddleTitle>
+            <Carousel />
             <Logos />
             <MoreSlido />
             <HowToUse />
