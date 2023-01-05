@@ -50,7 +50,7 @@ const RootModal = styled.div`
 `
 
 const Thumb = styled.img`
-    
+
     width: 1216px;
 `
 
