@@ -10,8 +10,8 @@ export default function EventInputBox() {
                 <Circle>
                     <svg width="30" height="30" viewBox="0 0 30 30" role="img">
                         <circle cx="15" cy="15" r="15" fill="#1A73E8"/>
-                        <path d="M14.0967 21.6001L20.0967 15.0001L14.0967 8.4001" stroke="white" stroke-width="1.54286" fill="none"/>
-                        <path d="M19.1973 14.9998L7.19727 14.9998" stroke="white" stroke-width="1.54286"/>
+                        <path d="M14.0967 21.6001L20.0967 15.0001L14.0967 8.4001" stroke="white" strokeWidth="1.54286" fill="none"/>
+                        <path d="M19.1973 14.9998L7.19727 14.9998" stroke="white" strokeWidth="1.54286"/>
                     </svg>
                 </Circle>
             </EventWrapper>
