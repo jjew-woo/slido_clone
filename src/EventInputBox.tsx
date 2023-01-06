@@ -1,23 +1,40 @@
+import { useState } from "react"
 import styled from "styled-components"
 
+interface EventInputBoxProps {
+    isOpacity: number;
+}
+
 export default function EventInputBox() {
+    const [isInputText, setIsInputText] = useState<boolean>(false)
+    const checkInput = (e : React.ChangeEvent<HTMLInputElement>) => {
+        setIsInputText(e.target.value ? true : false);
+    }
+    
     return (
-        <EventBox>
-            <EventLabel>Joining as a participant?</EventLabel>
-            <EventWrapper>
-                <Hash>#</Hash>
-                <EventInput type="text" placeholder="Enter code here"></EventInput>
-                <Circle>
-                    <svg width="30" height="30" viewBox="0 0 30 30" role="img">
-                        <circle cx="15" cy="15" r="15" fill="#1A73E8"/>
-                        <path d="M14.0967 21.6001L20.0967 15.0001L14.0967 8.4001" stroke="white" strokeWidth="1.54286" fill="none"/>
-                        <path d="M19.1973 14.9998L7.19727 14.9998" stroke="white" strokeWidth="1.54286"/>
-                    </svg>
-                </Circle>
-            </EventWrapper>
-        </EventBox>
+        <Wrapper>
+            <EventBox>
+                <EventLabel>Joining as a participant?</EventLabel>
+                <EventWrapper>
+                    <Hash>#</Hash>
+                    <EventInput type="text" placeholder="Enter code here" onChange={checkInput}></EventInput>
+                    <Circle>
+                        <svg width="30" height="30" viewBox="0 0 30 30" role="img">
+                            <circle cx="15" cy="15" r="15" fill="#1A73E8"/>
+                            <path d="M14.0967 21.6001L20.0967 15.0001L14.0967 8.4001" stroke="white" strokeWidth="1.54286" fill="none"/>
+                            <path d="M19.1973 14.9998L7.19727 14.9998" stroke="white" strokeWidth="1.54286"/>
+                        </svg>
+                    </Circle>
+                </EventWrapper>
+                <EventLegal isOpacity={isInputText ? 1 : 0}>By using Slido you accept our <ColorText>Policy</ColorText></EventLegal>
+            </EventBox>
+            
+        </Wrapper>
     )
 }
+
+const Wrapper = styled.form`
+`
 
 const EventBox = styled.div`
     position: relative;
@@ -79,5 +96,20 @@ const Hash = styled.span`
 const Circle = styled.span`
     position: absolute;
     margin-left: 230px;
+    cursor: pointer;
+`
+
+const EventLegal = styled.p<EventInputBoxProps>`
+    position: absolute;
+    width: 192px;
+    font-size: 14px;
+    text-align: left;
+    left: calc(100% + 1rem);
+    opacity: ${(props) => props.isOpacity};
+`
+
+const ColorText = styled.span`
+    color: #39ac37;
+    text-decoration: underline;
     cursor: pointer;
 `
