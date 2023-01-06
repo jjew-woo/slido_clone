@@ -30,7 +30,7 @@ const Wrapper = styled.div`
     background-color: white;
     border-radius: 4px;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
-
+    z-index: 2;
 `;
 
 const ContentWrapper = styled.div`

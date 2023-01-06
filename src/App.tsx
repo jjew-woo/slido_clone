@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Body from './Body'
 import PrivacyBanner from './PrivacyBanner';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Header />
         <Body />
         <PrivacyBanner />
+        <Footer />
       </main>
     </div>
   );
