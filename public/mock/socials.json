@@ -1,0 +1,41 @@
+{
+    "result": [
+      {
+        "id": 1,
+        "icon": "/icons/social/ic_facebook.svg"
+      },
+      {
+        "id": 2,
+        "icon": "/icons/social/ic_twitter.svg"
+      },
+      {
+        "id": 3,
+        "icon": "/icons/social/ic_linkedin.svg"
+      },
+      {
+        "id": 4,
+        "icon": "/icons/social/ic_instagram.svg"
+      },
+      {
+        "id": 5,
+        "icon": "/icons/social/ic_youtube.svg"
+      }
+    ],
+    "language": [
+      {
+        "id": 1,
+        "value": "En",
+        "title": "English (International)"
+      },
+      {
+        "id": 2,
+        "value": "De",
+        "title": "Deutsch"
+      },
+      {
+        "id": 3,
+        "value": "Ja",
+        "title": "日本語"
+      }
+    ]
+  }

@@ -1,10 +1,12 @@
 import styled from "styled-components"
+import ExternalLinks from "./ExternalLinks"
 import Utils from "./Utils"
 
 function Footer() {
     return (
         <Wrapper>
             <Utils />
+            <ExternalLinks />
         </Wrapper>
         
     )
