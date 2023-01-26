@@ -29,7 +29,7 @@ export default function HowToUse() {
 }
 
 const Section = styled.div`
-    width: 100vw;
+    width: 100%;
     background-color: #f5f5f5;
 `
 

@@ -47,7 +47,7 @@ export default function Header() {
 
 const Nav = styled.nav`
     top:0;
-    width: 100vw;
+    width: 100%;
     height: 48px;
     position: fixed;
     display: flex;
@@ -68,7 +68,7 @@ const NavWrapper = styled.div`
 
 const Wrapper = styled.div`
     /* display: block; */
-    width: 100vw;
+    width: 100%;
     height: 80px;
     /* position: relative; */
     padding: 16px 0;

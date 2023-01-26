@@ -60,7 +60,7 @@ export default function ExternalLinks() {
 const Background = styled.div`
     display: flex;
     height: 130px;
-    width: 100vw;
+    width: 100%;
     background-color: #f5f5f5;
     justify-content: center;
     align-items: center;

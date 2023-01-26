@@ -15,7 +15,7 @@ export default function MoreSlido() {
 
 const Background = styled.div`
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     background-color: #39AC37;
     justify-content: center;
