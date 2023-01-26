@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import ExternalLinks from "./ExternalLinks"
+import FooterCopyright from "./FooterCopyright"
 import Utils from "./Utils"
 
 function Footer() {
@@ -7,6 +8,7 @@ function Footer() {
         <Wrapper>
             <Utils />
             <ExternalLinks />
+            <FooterCopyright />
         </Wrapper>
         
     )
@@ -18,7 +20,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 0 24px 0;
+    padding-top: 80px;
 `
 
 export default Footer
