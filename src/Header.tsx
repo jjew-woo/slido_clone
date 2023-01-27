@@ -3,9 +3,15 @@ import styled from "styled-components"
 import LinkedButton from "./LinkedButton"
 import MenuButton from "./MenuButton"
 import ColorButton from "./ColorButton"
+import Submenu from "./Submenu"
 
-export default function Header() {
+interface MenuProps {
+    categories: Array<[]>;
+}
+
+export default function Header({categories} : MenuProps) {
     const [scrollY, setScrollY] = useState(false);
+    const [showSubmenu, setShowSubmenu] = useState(false);
 
     const scrollEvent = () => {
         if(window.scrollY) {
@@ -29,11 +35,11 @@ export default function Header() {
                 <NavWrapper>
                     <LogoWrapper><Logo src="/icons/ic_logo.svg" alt="logo"/></LogoWrapper>
                     <MenuWrapper>
-                        <MenuButton text="Product"/>
-                        <MenuButton text="Solution"/>
-                        <LinkedButton text="Pricing"/>
-                        <MenuButton text="Resources"/>
-                        <LinkedButton text="Enterprise"/>
+                        {categories.map((category : any) => (
+                            category.subCategories.length ? 
+                            <MenuButton text={category.name}><Submenu subCategories={category.subCategories}/></MenuButton> 
+                            : <LinkedButton text={category.name}/>
+                        ))}
                     </MenuWrapper>
                     <MenuWrapper>
                         <LinkedButton text="Log In"/>
