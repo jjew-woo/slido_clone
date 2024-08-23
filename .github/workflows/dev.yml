@@ -1,0 +1,40 @@
+name: Deploy to Server10
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}            
+
+      - name: Clone or pull repository on remote server
+        env:
+          USER: root
+          HOST: 15.164.107.187
+          TARGET_DIR: /root/bd-web-front
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ env.USER }}@${{ env.HOST }} << 'EOF'
+            
+            # 문제 발생 시 스크립트 중단
+            set -e
+
+            cd ${{ env.TARGET_DIR }} || exit 1            
+            git pull origin main || { echo "Git pull failed"; exit 1; }
+
+            
+            # nodejs의 종속성 설치, 빌드
+            echo "Running npm install..."
+            cd ${{ env.TARGET_DIR }}
+            npm install || { echo "npm install failed"; exit 1; }
+
+            echo "Running npm run build..."
+            npm run build || { echo "npm run build failed"; exit 1; }
+
+            echo "Deployment complete."
+          EOF
+
