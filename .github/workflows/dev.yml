@@ -1,4 +1,4 @@
-name: Deploy to Server10
+name: Deploy to Server11
 on: [push]
 jobs:
   deploy:
@@ -15,8 +15,8 @@ jobs:
       - name: Clone or pull repository on remote server
         env:
           USER: root
-          HOST: 15.164.107.187
-          TARGET_DIR: /root/bd-web-front
+          HOST: 3.38.152.198
+          TARGET_DIR: /root/slido_clone
         run: |
           ssh -o StrictHostKeyChecking=no ${{ env.USER }}@${{ env.HOST }} << 'EOF'
             
@@ -33,7 +33,7 @@ jobs:
             npm install || { echo "npm install failed"; exit 1; }
 
             echo "Running npm run build..."
-            npm run build || { echo "npm run build failed"; exit 1; }
+            npm run start || { echo "npm run build failed"; exit 1; }
 
             echo "Deployment complete."
           EOF
