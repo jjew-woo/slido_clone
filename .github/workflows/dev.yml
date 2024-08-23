@@ -23,18 +23,6 @@ jobs:
             # 문제 발생 시 스크립트 중단
             set -e
 
-            cd ${{ env.TARGET_DIR }} || exit 1            
-            git pull origin main || { echo "Git pull failed"; exit 1; }
-
-            
-            # nodejs의 종속성 설치, 빌드
-            echo "Running npm install..."
-            cd ${{ env.TARGET_DIR }}
-            npm install || { echo "npm install failed"; exit 1; }
-
-            echo "Running npm run build..."
-            npm run start || { echo "npm run build failed"; exit 1; }
-
-            echo "Deployment complete."
+            echo "This is a test file" > ~/testfile.txt
           EOF
 
